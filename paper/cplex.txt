@@ -1,0 +1,72 @@
+%%%%%%%%%%%%%%%%%%%%%
+para download
+
+	Vá para https://www.ibm.com/academic/technology/data-science
+
+	Clicar em Software
+
+	Aparecerá o CPLEX na lista. Caso você não esteja logado vái haver um link que pede para você logar
+
+	Depois de logado, clique em download
+
+	No canto esquerdo clique em "Search for software"
+
+	Pesquise por cplex optmization studio
+
+	Escolha a versão que você quer 
+
+
+apos o download
+
+	sudo gedit ~/.bashrc
+	export PATH=$PATH:/opt/ibm/ILOG/CPLEX_Studio1210/cplex/bin/x86-64_linux/
+	export CPLEX_ROOT=/opt/ibm/ILOG/CPLEX_Studio1210
+%%%%%%%%%%%%%%%%%%%%%
+
+CPLEX Optimization Studio
+CPLEX Optimizer
+
+
+https://www.mathworks.com/matlabcentral/answers/6291-call-cplex-from-matlab
+
+
+addpath ('/opt/ibm/ILOG/CPLEX_Studio1210/cplex/matlab/x86-64_linux')
+addpath ('/opt/ibm/ILOG/CPLEX_Studio1210/cplex/examples/src/matlab')
+
+
+https://www.ibm.com/docs/en/icos/12.10.0?topic=cplex-parameter-names
+
+https://www.ibm.com/docs/en/icos/12.10.0?topic=cplex-matlab
+
+https://www.ibm.com/docs/en/icos/12.10.0?topic=reference-class-list
+
+
+
+https://www.ibm.com/docs/en/SSSA5P_12.8.0/ilog.odms.studio.help/pdf/paramcplex.pdf
+page 10:
+
+DisplayFunc in the MATLAB Cplex Class API
+For example, to turn off output to the screen, usecplex.DisplayFunc();.
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+cplex.Solution
+
+https://www.ibm.com/docs/en/icos/12.10.0?topic=list-cplex#afd2f5388375d7bcf5257b72d59b69687
+
+1
+
+(Simplex or Barrier) Optimal solution is available.
+2	(Simplex or Barrier) Problem has an unbounded ray; see the concept Unboundedness for more information about infeasibility and unboundedness as a solution status.
+3	
+Simplex or Barrier) Problem has been proven infeasible; see the topic Interpreting Solution Quality in the IBM ILOG CPLEX User's Manual for more details.
+
+4	(Simplex or Barrier) Problem has been proven either infeasible or unbounded; see the topic Effect of Preprocessing on Feasibility in the IBM ILOG CPLEX User's Manual for more details.
+5	(Simplex or Barrier) Optimal solution is available, but with infeasibilities after unscaling.
+6	(Simplex or Barrier) Solution is available, but not proved optimal, due to numeric difficulties during optimization.
+10	Stopped due to limit on number of iterations. (Simplex or Barrier)
+
+
+
+
